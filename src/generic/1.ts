@@ -3,13 +3,17 @@
   Доповніть цю функцію, використовуючи generics, щоб вона повертала правильний тип.
 */
 
-function getPromise () {
-  return new Promise((resolve) => {
-    resolve(['Text', 50]);
-  });
-}
+const getPromise: Promise<any> = new Promise((resolve) => {
+  resolve(['text', 50])
+})
 
-getPromise()
+// function getPromise () {
+//   return new Promise((resolve) => {
+//     resolve(['Text', 50]);
+//   });
+// }
+
+getPromise
 .then((data) => {
   console.log(data);
 });
