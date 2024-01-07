@@ -3,7 +3,7 @@
   Доповніть цю функцію, використовуючи generics, щоб вона повертала правильний тип.
 */
 
-const getPromise: Promise<any> = new Promise((resolve) => {
+const getPromise: Promise<(string | number)[]> = new Promise((resolve) => {
   resolve(['text', 50])
 })
 
